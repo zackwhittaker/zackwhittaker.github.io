@@ -1,0 +1,216 @@
+@import 'normalize';
+* { box-sizing: border-box; }
+
+// Variables
+$font-stack: 'Open Sans', Helvetica, sans-serif;
+$orange: #f37b21;
+$black: #323132;
+$bold: 800;
+$form-border: #404041;
+
+// Sets background image and fonts
+body {
+  font-family: $font-stack;
+  color: #ffffff;
+  color: $black;
+  top: 0;
+  left: 0;
+  background-image: url(https://farm3.staticflickr.com/2906/14334201187_ec89d42b0a_o.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: 100%;
+  margin: 0px !important;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+// Positioning Vox logo in upper right corner
+.vox-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 6;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// Quiz Quartet text and icon positioning
+.quiz-quartet h1 {
+  font-family: $font-stack;
+  font-weight: $bold;
+  font-size: 4em;
+  color: #ffffff;
+  text-align: center;
+  z-index: 3 !important;
+  margin: 0;
+  padding: 20px 0;  
+  > img {
+    width: 56px;
+    margin-bottom: -9px;
+  }
+}
+
+// Container for quiz generator
+.container {
+  position: relative;
+  background-color: #fff;
+  margin: 0 auto 30px;
+  padding: 0;
+  max-width: 900px;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.notice {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 30px;
+  color: #fff;
+
+  p {
+    margin: 0 0 1em;
+  }
+}
+
+.step {
+  margin: 0 0 40px;
+}
+
+.embed {
+  margin: 0;
+}
+
+.chart-type {
+  width: 100%;
+  overflow: hidden;
+
+  span {
+    width: 49%;
+    padding: 20px;
+    float: left;
+    cursor: pointer;
+    border: 2px solid $form-border;
+    border-radius: 4px;
+    &.flowchart {
+      float: right;
+    }
+    &:hover, &.checked {
+      background: #21DDF3;
+    }
+  }
+
+}
+
+.quiz-help {
+  display: none;
+  background: #eee;
+  padding: 20px;
+  margin: 0 0 20px;
+}
+
+#url {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin: 0 0 20px;
+  border: 2px solid $form-border;
+  border-radius: 4px;
+}
+
+
+// Subheadings for quiz generator steps
+h5 {
+  font-family: $font-stack;
+  font-weight: $bold;
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+  margin: 0% auto;
+  margin-bottom: 30px;
+  padding: 5px 0% 5px 0%;
+  border-bottom: 2px solid $orange;
+}
+
+// Text dividers (create quiz, preview quiz)
+h4 {
+  font-family: $font-stack;
+  font-weight: $bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: left;
+  display: block;
+  background-color: #404041;
+  padding: 10px;
+  border: 0px;
+}
+
+
+// Links style
+a {
+  text-decoration: none;
+  color: $orange;
+  -o-transition: .1s;
+  -ms-transition: .1s;
+  -moz-transition: .1s;
+  -webkit-transition: .1s;
+  transition: .1s;
+  &:hover {
+    color: #404041;
+  }
+}
+
+// 'Generate Your Quiz' button
+button {
+  color: #fff;
+  text-align: center;
+  width: 25%;
+  background-color: #f27421;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 4px;
+  border: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+  &:hover {
+    background-color: #404041;
+  }
+}
+
+label {
+  margin: 0 10px 0 5px;
+}
+
+// Preview of generated quiz
+.quiz-preview {
+  background-color: transparent;
+  z-index: 6 !important;
+  padding: 0;
+}
+
+// Embed code textarea
+textarea {
+  color: #444;
+  border: 2px solid #666;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#instructions {
+  display: none;
+}
+
+
