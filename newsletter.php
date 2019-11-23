@@ -2,7 +2,7 @@
 
 //THIS RETURNS THE IMAGE
 header('Content-Type: image/gif');
-readfile('newsletter.gif');
+readfile('https://zackwhittaker.github.io/newsletter.gif');
 
 
 //THIS IS THE SCRIPT FOR THE ACTUAL TRACKING
